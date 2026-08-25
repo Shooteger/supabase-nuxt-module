@@ -3,15 +3,19 @@
   "description": "Nuxt x Supabase Module Docs",
   "type": "module",
   "scripts": {
+    "prebuild": "cd .. && nuxt-module-build prepare",
     "build": "nuxt build",
-    "dev": "nuxt dev"
+    "dev": "TMPDIR=/tmp nuxt dev"
   },
   "dependencies": {
-    "@nuxtjs/plausible": "3.0.2",
+    "@nuxtjs/plausible": "4.0.0",
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
-    "better-sqlite3": "^12.10.0",
-    "docus": "^5.11.0"
+    "better-sqlite3": "^12.11.1",
+    "docus": "^5.12.3"
   },
-  "packageManager": "pnpm@11.1.1"
+  "packageManager": "pnpm@11.15.0",
+  "devDependencies": {
+    "@iconify-json/lucide": "^1.2.118"
+  }
 }
